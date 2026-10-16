@@ -1,0 +1,12 @@
+2026-09-16 12:03:32,690 | INFO    | numexpr.utils | NumExpr defaulting to 2 threads.
+2026-09-16 12:03:35,028 | INFO    | scanner | Markets loaded (first load): 4632 instruments
+2026-09-16 12:03:36,377 | INFO    | scanner | Futures scan: 766 total tickers, 80 USDT-M perps with 24h volume >= $50,000,000 (3 stablecoin/leveraged excluded)
+Traceback (most recent call last):
+  File "/home/z/my-project/z-code-bott/scripts/funnel_check.py", line 69, in <module>
+    main()
+  File "/home/z/my-project/z-code-bott/scripts/funnel_check.py", line 52, in main
+    if df_15m is None or filter_15m.confirm_15m(df_15m, ctx["direction"]) is None:
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/z/my-project/z-code-bott/filter_15m.py", line 42, in confirm_15m
+    raise ValueError(f"direction must be BUY or SELL, got {direction!r}")
+ValueError: direction must be BUY or SELL, got None
